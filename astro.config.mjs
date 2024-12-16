@@ -3,6 +3,5 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
     site: 'https://durkinliam.github.io',
-    base: 'durkinliam.github.io',
     integrations: [tailwind()]
 });

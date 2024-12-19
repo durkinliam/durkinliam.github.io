@@ -21,7 +21,9 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
       - name: Create .nojekyll file
-        run: echo "" > .nojekyll
+        run: |
+          mkdir -p ./public
+          echo "" > ./public/.nojekyll
 
   deploy:
     if: github.ref == 'refs/heads/main'

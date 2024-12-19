@@ -20,8 +20,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
-      - name: Create public/.nojekyll file
-        run: touch public/.nojekyll
+      - name: Create .nojekyll file
+        run: echo "" > .nojekyll
 
   deploy:
     needs: build
